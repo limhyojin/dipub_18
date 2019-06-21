@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>코딩 첫번째</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<meta property="og:title" content="히어로 찐따미 전격 탐구" />
+	<meta property="og:description" content="작품 속에서 활약하는
+히어로들의 주옥같은 찐따미를 확인해보자!" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://https://limhyojin.github.io/dipub_18/" />
+	<meta property="og:image" content="thumbnail.png" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<style>
+	@font-face { font-family: 'yg-jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); font-weight: normal; font-style: normal; }
+	.wrap {margin:auto; margin:0; padding:0; width: 1500px; background:black;overflow: hidden;}
+	.wrap2 {margin:0; padding:0; margin:auto; width: 800px; background:black;}
+	
+	ul, li, nav{margin:0;padding:0; color: white;}
+	.navigation li{font-family:'Noto Sans KR', sans-serif;list-style-type: none; margin:0; padding:0; margin-top: 50px;width: 155px; height: 40px; display: inline-block; text-align: center; line-height: 40px;}
+	.topbar {position:absolute;z-index: 50;}
+	
+	ul{margin:auto; height: 200px;}
+	ul, li{color:white;}
+	ul li{line-height: 1.8;}
+	nav ul{text-align: left; padding: 0; margin:0; display: inline-block;}
+	nav li{list-style-type: none; width:110px; height:40px; display: inline-block; text-align: centerl line-height:40px}
+	nav li a{text-decoration: none;color: white;}
+	nav li a:link, li a:hover, li a:active, li a:visited {display: block; text-decoration: none; transition: all 1s; }
+	nav li a: hover{color:#00ff00;}
+
+	.first{position: relative; width: 800px; height: 1000px; }
+	.ef1 {position: absolute; left: 0px; width:800px;top:-20px;opacity: 0;animation: bld 1s infinite alternate linear;}
+	@keyframes bld{
+		from{}
+		to{opacity: 1;}
+	}
+
+	.ef2 {position: absolute; width:1600px; left: -400px; top:-80px;animation: ziro 10s infinite linear; perspective: 100px}
+	@keyframes ziro{
+		from{}
+		to{transform: rotate3d(1,0.5,0.5,360deg);}}
+		.ef3 {position: absolute; width:1600px; left: -400px; top:-80px;animation: effect 10s infinite ease-in; perspective: 100px}
+	@keyframes effect{
+		from{}
+		to{transform: rotate3d(0.5,1,1,360deg);}}
+	
+	.hero1 {position: absolute;width:450px; left: 250px; top:90px; animation: attack 3s ease-in-out;}
+	@keyframes attack{
+		from{left: 500px;opacity: 0.2;}
+		to{left: 250px;opacity: 1;}}
+	.hero2 {position: absolute; width:140px; left:340px; top:250px;animation: open1 3s ease-in-out;}
+	@keyframes open1{
+		from{left: 50px; opacity: 0.5;}
+		to{left: 340px;opacity: 1;}}
+	.hero3 {position: absolute; width: 250px; left:70px; top:150px; animation: open2 2s ease-in;}
+	@keyframes open2{
+		from{left: 200px;opacity: 0.5;}
+		to{left: 70px;opacity: 1;}}
+	.hero4 {position: absolute; width: 450px; left: 250px; top:300px;animation: open3 2s ease-in-out;}
+	@keyframes open3{
+		from{left: -100px;opacity: 0.7;}
+		to{left: 250px;opacity: 1;}}
+	.hero5 {position: absolute; width: 320px; left:150px; top:250px;animation: open4 1s ease-in-out;}
+	@keyframes open4{
+		from{left: 900px;opacity: 0.9;}
+		to{left: 150px;opacity: 1;}}
+	.text {position:absolute; left:135px; top: 650px;}
+	.text h1{margin:0; padding:0;font-family: 'yg-jalnan'; font-size: 48px;color:white; text-align: center;}
+	.text p{margin:0; padding:0;font-family:'Noto Sans KR', sans-serif; font-size:20px;color:#8b8b8b;text-align: center;}
+
+	.second{position: relative; width:800px; height:1400px;}
+	.text2{position:absolute;left:182.5px;}
+	.text2 h2 h3 p{margin:0; padding: 0; text-align: center; }
+	.text2 h2{margin:0;font-family: 'yg-jalnan'; font-size: 32px; text-align: center;color:#00ff00;}
+	.text2 h3{margin:0;font-family: 'Noto Sans KR', sans-serif; font-size: 20px; font-weight:500px;text-align: center;color:#00ff00;font-size: 20px;margin-bottom: 24px}
+	.text2 p{margin:0; font-family: 'Noto Sans KR', sans-serif;color:#00ff00;font-size: 15px;text-align: center;line-height: 1.8;}
+	.midori {position:absolute; width: 508px;
+				z-index:5; left: -50px; top:550px; animation: move infinite alternate 1s ease-in; font-size: 47px;}
+	@keyframes move{
+		from{width: 300px;}
+		to{width:509px;}
+		}
+	.mi1 {width:380px; position: absolute;left:40px;top:370px;z-index: 1;}
+	.mi2 {width:200px; position: absolute; left:440px; top:347.5px;z-index: 1;}
+	.mi3 {width:500px; position:absolute;right:40px; top:602px;z-index: 1;}
+	.mi4 {width:420px; position: absolute; left:40px; top:900px;z-index: 1;}
+	.mi5 {width:280px; position:absolute; right:40px; top:900px;z-index: 1;}
+	.cover {width:800px;background:black; opacity:0.5; height:1000px;position:absolute;z-index: 2;top:300px;}
+	.front {position:absolute;z-index:3;left:-140px; top: 370px;}
+	.otaku {position:absolute;z-index: 3; left:440px;top:425px; font-family: 'yg-jalnan'; font-size: 32px;color:
+	#00ff00	}
+	.ulbo {position: absolute;z-index: 3; font-family:'yg-jalnan'; font-size: 32px; color:#00ff00; left:510px; top:635px;}
+	.hogu {position: absolute;z-index: 3; font-family:'yg-jalnan'; font-size: 32px; color:#00ff00; left:585px; top:995px;}
+
+	.third{position:relative; width:800px; height:1800px;}
+	.text3{position:absolute; left:183px;}
+	.text3 h2 h3 p{margin:0; padding: 0; text-align: center; }
+	.text3 h2{margin:0;font-family: 'yg-jalnan'; font-size: 32px; text-align: center;color:#ff0f3d;}
+	.text3 h3{margin:0;font-family: 'Noto Sans KR', sans-serif; font-size: 20px; font-weight:500px;text-align: center;color:#ff0f3d;font-size: 20px;margin-bottom: 24px}
+	.text3 p{margin:0; font-family: 'Noto Sans KR', sans-serif;color:#ff0f3d; font-size: 15px;text-align: center;line-height: 1.8;}
+	.two {position:absolute; left:40px;width:760px; top:350px;}
+
+	@keyframes move2 {
+		from{left:400px;}
+		to{left: 20px;}
+	}
+	.sp1 {position:absolute;width:300px;}
+	.sp2 {position:absolute;width:300px;right:40px;}
+	.sp3 {position:absolute;width:400px;right:40px;top:190px;}
+	.sp4 {position:absolute;width:450px; top:764px;}
+	.sp5 {position:absolute; width:250px; top:698px; right:40px;}
+	.sp6 {position:absolute; width:300px;top:968px;}
+	.sp7 {position:absolute; width:400px; top:968px; right:40px;}
+	.two .cover {width:800px;background:black; opacity:0.5; height:1360px;position:absolute;z-index: 2;top:0px;}
+	.front2 {position:absolute;right:-40px;top:130px;z-index: 3;}
+	.charac {position:absolute;z-index: 3;font-family: 'yg-jalnan'; font-size: 32px;color:#ff0f3d;
+	}
+
+	.firth {position:relative; width:800px; height:1750px;}
+	.text4 {position:absolute;left:183px;}
+	.text4 h2{margin:0;font-family: 'yg-jalnan'; font-size: 32px; text-align: center;color:#00ffff;}
+	.text4 h3{margin:0;font-family: 'Noto Sans KR', sans-serif; font-size: 20px; font-weight:500px;text-align: center;color:#00ffff;font-size: 20px;margin-bottom: 24px}
+	.text4 p{font-family: 'Noto Sans KR', sans-serif; font-size: 15px; text-align: center; color:#00ffff;}	
+	.three {position:absolute; left:40px; width: 760px; top:300px;}
+
+	.fifth{position:relative; width:800px; height: 2000px;}
+	.text5{position:absolute;left: 183px;}
+	.text5 h2{margin:0;font-family: 'yg-jalnan'; font-size: 32px; text-align: center;color:#ffff00;}
+	.text5 h3{margin:0;font-family: 'Noto Sans KR', sans-serif; font-size: 20px; font-weight:500px;text-align: center;color:#ffff00;font-size: 20px;margin-bottom: 24px}
+	.text5 p{font-family: 'Noto Sans KR', sans-serif; font-size: 15px; text-align: center; color:#ffff00;}
+	.four {position: absolute; left:40px; width:720px; top:300px;}
+
+	.sixth{position:relative; width:800px; height:2000px;}
+	.text6{position:absolute;left: 183px;}
+	.text6 h2{margin:0;font-family: 'yg-jalnan'; font-size: 32px; text-align: center;color:#ff00ff;}
+	.text6 h3{margin:0;font-family: 'Noto Sans KR', sans-serif; font-size: 20px; font-weight:500px;text-align: center;color:#ff00ff;font-size: 20px;margin-bottom: 24px}
+	.text6 p{font-family: 'Noto Sans KR', sans-serif; font-size: 15px; text-align: center; color:#ff00ff;}
+	.five{position: absolute; left:40px; width: 720px; top:300px;}
+
+	@keyframes move3{
+		from{}
+		to{opacity:0;}
+	}
+	@keyframes move4{
+		from{left:400px; }
+		to{left:50px;opacity:1;}
+	}
+	@keyframes move5{
+		from{width:400px; opacity: 0;}
+		to{}
+	}
+
+</style>
+<body>
+	<div class="wrap">
+	<div class="wrap2">
+		<div class="topbar">
+		<nav class="navigation">
+			<ul>
+				<li><a href="#second2">Midoriya izuku</a></li>
+				<li><a href="#third3">Spider man</a></li>
+				<li><a href="#firth4">Usopp</a></li>
+				<li><a href="#fifth5">Ron weasley</a></li>
+				<li><a href="#sixth6">Hiccup</a></li>
+			</ul>
+		</nav>
+		</div>
+		<section class="first">
+			<img src="effect/bomb.png" class="ef1">
+			<img src="effect/dust.png" class="ef2">
+			<img src="effect/dust.png" class="ef3">
+
+			<img src="spiderman/spiderman.png" class="hero1">
+			<img src="ron weasley/ron.png" class="hero2">
+			<img src="hiccup/hiccup.png" class="hero3">
+			<img src="usopp/usopp.png" class="hero4">
+			<img src="midoriya/midoriya.png" class="hero5">
+		<section class="text">
+			<h1>히어로 찐따미 전격 탐구</h1>
+			<p>작품 속에서 활약하는<br> 히어로들의 주옥같은 찐따미를 확인해보자!</p>
+		</section>
+			</section>
+		
+		<section class="second" id="second2">
+			<section class="text2">
+			<h2>Midoriya Izuku</h2>
+			<h3>미도리야 이즈쿠</h3>
+			<p>'나의 히어로 아카데미아' 남주인공으로 초반에는<br>
+			능력이 전혀 없는 너드로 나온다. 능력을 가진 후에도 찐따미는 어디가지<br>
+			않고 빛을 발하며 그의 캐릭터성이 된다.</p>
+			</section>
+		
+		<div class="cover"></div>
+		<img src="midoriya/midoriya_1.gif" class="mi1">
+		<img src="midoriya/midoriya_4.jpg" class="mi2">
+		<img src="midoriya/midoriya_fu.gif" class="mi3">
+		<img src="midoriya/midoriya_5.jpg" class="mi4">
+		<img src="midoriya/midoriya_fun2.jpg" class="mi5">
+			<section class="one">
+				<img src="midoriya/front.png" class=midori>
+				<img src="midoriya/midoriya_shadow.png" style=" position: absolute;
+				z-index: 4; left: -20px; top:375px;">
+				<p class="otaku">오타쿠</p>
+				<p class="ulbo">울보</p>
+				<p class="hogu">호구</p>
+			</section>
+		</section>
+
+		<section class="third" id="third3">
+			<section class="text3">
+			<h2>Spider man</h2>
+			<h3>스파이더맨</h3>
+			<p>수많은 스파이더맨 시리즈 중 그가 찌질하지 않았던 적은 없었다.<br>
+			적에게 끊임없이 입딜을 넣어주면서 상대방을 빡치게 하다가도 뒤돌아서서</br>
+			궁상떠는 그의 모습은 많은 팬들을 설레게 한다.</p>
+			</section>
+			<section class="two">
+				<div class="cover"></div>
+				<img src="spiderman/spiderman_fun2.jpg" class="sp1">
+				<img src="spiderman/spiderman_fun3.gif" class="sp2">
+				<img src="spiderman/spiderman_fun1.gif" class="sp3">
+				<img src="spiderman/spi.gif" class="sp4">
+				<img src="spiderman/spiderman_fun4.gif" class="sp5">
+				<img src="spiderman/spiderman_fun6.gif" class="sp6">
+				<img src="spiderman/siderman_fun5.jpg" class="sp7">
+				<section style="position:absolute; left:140px; top:140px;">
+					<img src="spiderman/front.png" style="position: absolute; z-index: 5; left:20px; top:10px;animation: move2 infinite 2s alternate">
+				<img src="spiderman/front_shdow.png" style="position: absolute; z-index:4; ">
+				</section>
+				<p class="charac" style="left:120px; top:150px;">깐죽이</p>
+				<p class="charac" style="left:70px; top:357px">허세충</p>
+				<p class="charac" style="left:0px; top:717px;">애송이</p>
+
+			</section>
+
+		</section>
+		<section class="firth" id="firth4">
+			<section class="text4">
+				<h2>Usopp</h2>
+				<h3>우솝</h3>
+				<p>만화 '원피스'의 저격수 우솝은 부족한 자신을 거짓말로<br>
+				포장하고 위기의 순간에 도망치기 일쑤다.<br>
+				하지만 거짓말을 실현시켜버려 갓우솝이라는 별명을 얻게 되었다.</p>
+			</section>
+			<section class="three">
+				<section style="position: absolute; left: -90px; top:180px;">
+				<img src="usopp/usopp_front.png" style="position: absolute; z-index:4;opacity: 1; animation: move3 3s infinite alternate ease-in;">
+				<img src="usopp/usopp_shadow.png" style="position:absolute; z-index: 3; left:80px; top:-15px;">
+				</section>
+				<div class="cover2" style="width:800px;background:black; opacity:0.5; height:1400px;position:absolute;z-index: 2;"></div>
+				<img src="usopp/usopp_fun5.gif" style="position:absolute;">
+				<img src="usopp/usopp_fun4.jpg" style="width: 200px;position:absolute; right: 40px; top:45px">
+				<img src="usopp/usopp_fun1.jpg" style="width:450px;position:absolute; right: 40px; top:265px;">
+				<img src="usopp/usopp_fun3.png" style="width:250px; position:absolute; top:684px;">
+				<img src="usopp/usopp_fun6.gif" style="width:450px;position:absolute;right: 40px;top:538px;">
+				<img src="usopp/usopp_fun3.jpg" style="width:400px; position:absolute; top:895.5px;">
+				<img src="usopp/usopp_fun2.jpg" style="width:300px; position: absolute; right:40px;top:895.5px">
+				<p style="position:absolute;z-index: 3;font-family: 'yg-jalnan'; font-size: 32px;color:#00ffff; left:470px; top:123px;">허세충</p>
+				<p style="position:absolute;z-index: 3;font-family: 'yg-jalnan'; font-size: 32px;color:#00ffff; left: 533px; top:330px;">거짓말쟁이</p>
+				<p style="position:absolute;z-index: 3;font-family: 'yg-jalnan'; font-size: 32px;color:#00ffff;right:50px; top:690px;">겁쟁이</p>
+			</section>			
+			 
+		</section>
+		<section class="fifth" id="fifth5">
+			<section class="text5">
+			<h2>Ron Weasley</h2>
+			<h3>론 위즐리</h3>
+			<p>특유의 허술함과 쫄보 심장으로 많은<br> 귀여운 장면을 만들어내며 많은팬들을 생성했다. 헤르미온느랑 사귀지도 않을 때<br>집착을 지리게 보여주면서 찐따 중의 찐따로 자리잡았다.</p>
+			</section>
+			<section class="four">
+				<section style="position:absolute; left:150px; top:150px;">
+						<img src="ron weasley/front.png" style="position: absolute; opacity:0; z-index: 4; animation: move4 8s infinite alternate">
+						<img src="ron weasley/front_shadow.png" style="position: absolute; z-index:3; left:-10px;top:-120px;">
+						
+				</section>
+				<div class="cover2" style="width:800px;background:black; opacity:0.5; height:1600px;position:absolute;z-index: 2;"></div>
+				<img src="ron weasley/ron_fun3.jpg" style="position:absolute; width:300px;">
+				<img src="ron weasley/ron_fun1.gif" style="position:absolute; width:400px; right:0px;">
+				<img src="ron weasley/ron_fun7.jpg" style="position:absolute; width:250px; top:226.5px;">
+				<img src="ron weasley/ron_fun4.jpg" style="position:absolute; width:600px; top:655px;">
+				<img src="ron weasley/ron2.gif" style="position:absolute;width:350px;top:923px;">
+				<img src="ron weasley/ron weasley.gif" style="position:absolute; width:350px; top:923px; right: 0px;">
+				<img src="ron weasley/ron_fun5.gif" style="position:absolute; width:250px; top:1191px;">
+				<img src="ron weasley/ron_6.jpg" style="position:absolute; width: 450px; top:1191px; right:0px">
+				<p style="position:absolute;z-index: 5;font-family: 'yg-jalnan'; font-size: 32px;color:#ffff00; left:190px; top:0px;">쫄보</p>
+						<p style="position:absolute;z-index: 5;font-family: 'yg-jalnan'; font-size: 32px;color:#ffff00; left: 100px; top:210px;">멍청이</p>
+						<p style="position:absolute;z-index: 5;font-family: 'yg-jalnan'; font-size: 32px;color:#ffff00;left:23px; top:570px;">질척이</p>
+			</section>
+			
+		</section>
+		<section class="sixth" id="sixth6">
+			<section class="text6">
+				<h2>Hiccup</h2>
+				<h3>히컵</h3>
+				<p>‘드래곤 길들이기’ 주인공 히컵은 시즌1에서 어좁이에다가 찐따같은<br>성격을 갖고 있었다. 시즌이 계속될수록<br>듬직해지는 체형이지만 성격마저 듬직해지진 못했다.</p>
+			</section>
+			<section style="position:absolute; left:-230px; top:500px;">
+						<img src="hiccup/hiccup_front.png" style="position: absolute; opacity:1;z-index: 4; width: 800px; animation: move5 5s infinite alternate ease-in;">
+						<img src="hiccup/hiccup_shadow.png" style="position: absolute; z-index:3; left:20px;top:-20px;">
+						
+			</section>
+			<section class="five">
+				<img src="hiccup/hiccup_fun2.jpg" style="position:absolute; width:350px;">
+				<img src="hiccup/hiccup_fun5.gif" style="position:absolute; width:350px; right:0px;">
+				<img src="hiccup/hiccup_fun4.gif" style="position:absolute; width:400px; right:0px; top:281px;">
+				<img src="hiccup/hiccup_fun6.gif" style="position:absolute; width:500px; right:0px; top:593px;">
+				<img src="hiccup/hiccup_fun3.jpg" style="position:absolute; width:700px; right:0px; top:894px;">
+				<img src="hiccup/hiccup_fun7.gif" style="position:absolute; width:350px; top:1192px; left:0px;">
+				<img src="hiccup/Hiccup still.jpg" style="position: absolute; width:350px; top:1192px; right:0px;">
+
+				<p style="position:absolute;z-index: 5;font-family: 'yg-jalnan'; font-size: 32px;color:#ff00ff; left:400px; top: 200px;">쫄보</p>
+						<p style="position:absolute;z-index: 5;font-family: 'yg-jalnan'; font-size: 32px;color:#ff00ff; left: 455px; top:410px;">겁쟁이</p>
+						<p style="position:absolute;z-index: 5;font-family: 'yg-jalnan'; font-size: 32px;color:#ff00ff;left:540px; top:765px;">소심</p>
+			</section>
+
+
+	<div>
+	</div>
+
+</body>
+<footer style="position: relative; font-family: 'Noto Sans KR', sans-serif; font-size: 14px; color:white;left:616; top: 1950px;text-align: center;">copyright 2019. lim hyojin. all right reserved.</footer>
+</html>
